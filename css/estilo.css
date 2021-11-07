@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*
+	AJUSTES GERAIS
+*/
+
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 300px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+@media (max-width: 767.98px) {
+
+	body {
+		margin-bottom: 0;
+	}
+
+	footer {
+		position: relative;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+
+	body {
+		margin-bottom: 340px;
+	}
+
+}
+
+/*
+	AJUSTES NAVBAR
+*/
+nav {
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
+	opacity: .8;
+}
+
+/*
+	AJUSTES FOOTER
+*/
+footer div.container-fluid div.container h4 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+footer div.container-fluid div.container ul.nav li.nav-item a.nav-link {
+	padding: 0;
+	color: #fff;
+}
+
+/*
+	AJUSTES SECTION PRINCIPAL
+*/
+section#principal div.container-fluid {
+	padding-bottom: 1rem;
+}
+
+section#principal div.container-fluid div.container {
+	font-size: 20px;
+	color: #fff;
+}
+
+section#principal div.container-fluid div.container p {
+	margin-top: .5rem;
+}
+
+section#principal div.container-fluid div.container div#texto-principal {
+	margin-top: 5rem;
+	padding: 1.5rem;
+	background-color: #ff006b;
+	box-shadow: -8px -8px #ffef00;
+}
+
+section#principal div.container-fluid div.container div#texto-principal h1 {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+section#principal div.container-fluid div.container span {
+	padding: .2rem;
+	background-color: #ff006c;
+	font-weight: 700;
+	font-style: italic;
+}
+
+section#principal div.container-fluid div.container img#foto-principal {
+	margin-top: 1.5rem;
+	margin-bottom: -3rem;
+	box-shadow: 20px 20px #ff006c;
+}
+
+@media (max-width: 767.98px) {
+
+	section#principal div.container-fluid div.container {
+		font-size: 15px;
+	}
+
+	section#principal div.container-fluid div.container div#texto-principal h1 {
+		font-size: 20px;
+	}
+
+	section#principal div.container-fluid div.container div#texto-principal img {
+		width: 64px;
+		top: 50px;
+		right: -15px;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	section#principal div.container-fluid div.container div#texto-principal img {
+		top: 30px;
+		right: -40px;
+	}
+
+	section#principal div.container-fluid div.container p,
+	section#principal div.container-fluid div.container span {
+		margin-left: 1rem;
+	}
+}
+
+@media (max-width: 1198.98px) {
+	section#principal div.container-fluid div.container img#foto-principal {
+		position: relative;
+		top: 130px;
+		right: 0;
+		width: 400px;
+	}
+}
+
+/*
+	AJUSTES SECTION BANNER
+*/
+section#banner {
+	background: url('../imagens/banner.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50 50;
+}
+
+section#banner div.container-fluid div.container div#texto-banner {
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	margin-top: 5rem;
+	border-radius: 35px 35px 0 0;
+	background-color: #fff;
+	font-size: 20px;
+	color: #808080;
+}
+
+section#banner div.container-fluid div.container div#texto-banner button.btn {
+	padding: 1rem 3rem;
+	margin-top: 2rem;
+	border-radius: 20px;
+	background-color: #00bfff;
+	box-shadow: 0 10px 0 #067093;
+	font-size: 26px;
+	font-weight: 900;
+	color: #06536d;
+}
+
+section#banner div.container-fluid div.container div#texto-banner button.btn:hover {
+	opacity: .8;
+}
+
+@media (max-width: 767.98px) {
+
+	section#banner div.container-fluid div.container div#texto-banner {
+		padding-right: 1rem;
+		padding-left: 1rem;
+		font-size: 15px;
+	}
+
+	section#banner div.container-fluid div.container img {
+		width: 250px;
+		margin-top: 5rem;
+	}
+
+	section#banner div.container-fluid div.container div#texto-banner button.btn {
+		padding: 1rem 1rem;
+		font-size: 20px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	section#banner div.container-fluid div.container img {
+		width: 290px;
+	}
+
+	section#banner div.container-fluid div.container div#texto-banner button.btn {
+		padding: 1rem;
+	}
+
+}
+
+/*
+	AJUSTES SECTION PRIMARIA
+*/
+section#primaria div.container-fluid {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+section#primaria div.container-fluid div.container {
+	color: #fff;
+}
+
+section#primaria div.container-fluid div.container h2 {
+	margin-top: 1rem;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+section#primaria div.container-fluid div.container p {
+	margin-top: 1rem;
+	font-size: 20px;
+}
+
+section#primaria div.container-fluid div.container div.card {
+	border-radius: 15px 15px 0 0;
+	background-color: #ffef00;
+}
+
+section#primaria div.container-fluid div.container div.card img,
+section#primaria div.container-fluid div.container div.card iframe {
+	border-radius: 15px;
+}
+
+section#primaria div.container-fluid div.container div.card div.img-primaria {
+	cursor: pointer;
+}
+
+section#primaria div.container-fluid div.container div.card-body span.card-text {
+	font-size: 13px;
+	font-weight: 700;
+	color: #d5065e;
+}
+
+@media (max-width: 767.98px) {
+
+	section#primaria div.container-fluid div.container h2 {
+		font-size: 20px;
+	}
+
+	section#primaria div.container-fluid div.container p {
+		font-size: 15px;
+	}
+
+	section#primaria div.container-fluid div.container div.card {
+		width: 250px !important;
+	}
+
+	section#primaria div.container-fluid div.container div.card i {
+		top: 20% !important;
+		right: 0% !important;
+		left: 35% !important;
+	}
+
+	section#primaria div.container-fluid div.container div.card iframe {
+		width: 250px !important;
+		height: 151.19px !important;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	section#primaria div.container-fluid div.container div.card {
+		width: 265px !important;
+	}
+
+	section#primaria div.container-fluid div.container div.card iframe {
+		width: 265px !important;
+		height: 160.27px !important;
+	}
+
+}
+
+/*
+	AJUSTES SECTION SECUNDARIA
+*/
+section#secundaria div.container-fluid {
+	padding-top: 2rem;
+	padding-bottom: 6rem;
+}
+
+section#secundaria div.container-fluid div.container {
+	color: #fff;
+}
+
+section#secundaria div.container-fluid div.container h2 {
+	margin-top: 1rem;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+section#secundaria div.container-fluid div.container p {
+	font-size: 20px;
+}
+
+section#secundaria div.container-fluid div.container span {
+	font-size: 27px;
+	padding: .2rem;
+	background-color: #ff006c;
+	font-weight: 700;
+}
+
+section#secundaria div.container-fluid div.container div.img-secundaria {
+	width: 200px;
+	height: 200px;
+	border-radius: 250px;
+	background-color: #00befe;
+	box-shadow: 5px 5px #fa0069;
+}
+
+section#secundaria div.container-fluid div.container p {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+
+	section#secundaria div.container-fluid div.container h2 {
+		font-size: 20px;
+	}
+
+	section#secundaria div.container-fluid div.container p {
+		font-size: 15px;
+	}
+
+	section#secundaria div.container-fluid div.container span {
+		font-size: 20px;
+	}
+
+	section#secundaria div.container-fluid div.container div.img-secundaria {
+		margin-bottom: 5rem;
+	}
+
+}
+
+/*
+	AJUSTES SECTION TERCIARIA
+*/
+section#terciaria div.container-fluid {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+section#terciaria div.container-fluid div.container h2 {
+	margin-top: 1rem;
+	font-size: 35px;
+	font-weight: 700;
+	color: #260b80;
+}
+
+section#terciaria div.container-fluid div.container p {
+	font-size: 20px;
+	color: #4b4a4a;
+}
+
+section#terciaria div.container-fluid div.container div.card {
+	border-radius: 15px 15px 0 0;
+	background-color: transparent;
+}
+
+section#terciaria div.container-fluid div.container div.card img,
+section#terciaria div.container-fluid div.container div.card iframe {
+	border-radius: 15px;
+}
+
+section#terciaria div.container-fluid div.container div.card div.img-terciaria {
+	cursor: pointer;
+}
+
+section#terciaria div.container-fluid div.container div.card-body {
+	margin-top: .5rem;
+}
+
+section#terciaria div.container-fluid div.container div.card-body span.card-text {
+	font-size: 16px;
+	font-weight: 700;
+	color: #260b80;
+}
+
+@media (max-width: 767.98px) {
+
+	section#terciaria div.container-fluid div.container h2 {
+		font-size: 20px;
+	}
+
+	section#terciaria div.container-fluid div.container p,
+	section#terciaria div.container-fluid div.container div.card-body span.card-text {
+		font-size: 15px;
+	}
+
+	section#terciaria div.container-fluid div.container div.card {
+		width: 250px !important;
+	}
+
+	section#terciaria div.container-fluid div.container div.card i {
+		top: 20% !important;
+		right: 0% !important;
+		left: 35% !important;
+	}
+
+	section#terciaria div.container-fluid div.container div.card iframe {
+		width: 250px !important;
+		height: 128.98px !important;
+	}
+
+}
+
+/*
+	CLASSES CONTEXTUAIS
+*/
+.bg-navbar {
+	background-color: #6a0783;
+}
+
+.bg-principal {
+	background-color: #00bfff;
+}
+
+.bg-primaria {
+	background-color: #ff006b;
+}
+
+.bg-secundaria {
+	background-color: #250b7f;
+}
+
+.bg-terciaria {
+	background-color: #c7c7c7;
+}
+
+.bg-footer {
+	background-color: #001d47;
+}
